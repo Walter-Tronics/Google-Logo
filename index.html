@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Chrome Logo</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+        <main>
+            <section></section>
+            <section></section>
+            <section></section>
+            <section></section>
+            <div></div>
+        </main>
+        <button>Light Mode</button>
+        <script>
+            let btn = document.querySelector("button");
+            let body = document.querySelector("body")
+            btn.addEventListener('click',()=>{
+                (body.style.backgroundColor!="white")? body.style.backgroundColor='white' : body.style.backgroundColor='rgba(0, 0, 0, .9)';
+                (btn.innerText=="Light Mode")? btn.innerText='Dark Mode' : btn.innerText='Light Mode';
+            });
+        </script>
+</body>
+</html>
